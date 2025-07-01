@@ -294,8 +294,5 @@ exports.login = async (req, res) => {
 }
 
 exports.logout = async (req, res) => {
-  // if (req.session) {
-  //   res.render('home');
-  // }
   req.session.destroy(() => res.render("login", { error: null }));
 }
