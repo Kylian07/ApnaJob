@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style/general.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https//fonts.googleapis.com/css27family=Robboto:wght@400;500;700display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style/footer.css">
+  <title>Apna Job</title>
+  <link rel="icon" href="/image/favicon.ico">
+
+
+
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 sticky-top h-20">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#" style="font-family: 'Merriweather', serif; font-weight: 500;"> <i
+          class="ri-quill-pen-fill"></i> APNA JOB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<%= user ? (user.role === 'recruiter' ? '/recruiter/jobs' : '/employee/jobs') : '/login' %>">
+  All Jobs
+</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <% if (user) { %>
+            <span class="text-black">Welcome, <%= user.username %> (<%= user.role %>)</span>
+            <a href="/logout" class="btn btn-danger ms-2" style="color: aliceblue;">Logout</a>
+          <% } else { %>
+            <a href="/login" class="btn btn-dark" style="color: aliceblue;">Log In</a>
+            <a href="/signup" class="btn btn-dark" style="color: aliceblue;">Sign Up</a>
+          <% } %>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <div class="page-1">
+    <div class="about">
+      <h1 class="us">Make Your Dreams Come True</h1>
+      <p class="sub">The job your desire find it with us and find the best people to hire</p>
+      <button class="my_button">Contact Us</button>
+    </div>
+    <div class="pic">
+      <img src="/image/image_edited_edited_edited.avif" alt="pic1">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+
+  <!-- page 2  -->
+
+  <div class="page2">
+    <div class="service">
+      <!-- <button>SERVICES</button> -->
+
+      <!-- cards -->
+
+      <div style="display: flex;
+      justify-content:space-evenly;">
+        <div class="card rounded-0 bg-transparent border-0 shadow-none me-5" style="width: 50px;height:25rem">
+          <img src="/image/img5.jpeg" class="card-img-top rounded-0" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+          </div>
+
+        </div>
+
+        <div class="card rounded-0 bg-transparent border-0 shadow-none me-5 " style="width: 50px;height:25rem">
+          <img src="/image/img5.jpeg" class="card-img-top rounded-0" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+          </div>
+
+        </div>
+
+        <div class="card rounded-0 bg-transparent border-0 shadow-none  " style="width: 50px;height:25rem">
+          <img src="/image/img5.jpeg" class="card-img-top rounded-0 " alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+              content.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- slide -->
+
+      
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex">
+              <div class="slide-detail h-20 w-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis, sit neque aut velit, quasi maxime ea corporis mollitia non eum vel numquam consectetur labore unde suscipit laboriosam illo soluta!
+              </div>
+              <img src="/image/img5.jpeg" class="d-block w-90" alt="...">
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex">
+              <div class="slide-detail h-20 w-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis, sit neque aut velit, quasi maxime ea corporis mollitia non eum vel numquam consectetur labore unde suscipit laboriosam illo soluta!
+              </div>
+              <img src="/image/img5.jpeg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex">
+              <div class="slide-detail h-20 w-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis, sit neque aut velit, quasi maxime ea corporis mollitia non eum vel numquam consectetur labore unde suscipit laboriosam illo soluta!
+              </div>
+              <img src="/image/img5.jpeg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+
+
+      <div class="company-names">
+        Get your dream job at
+      </div>
+    </div>
+    <div class="company-logo">
+      <div>
+        <img class="google" src="/image/189824.webp" alt="">
+      </div>
+      <div>
+        <img class="image" src="/image/Pinterest-logo.png" alt="">
+      </div>
+      <div>
+        <img class="image" src="/image/Dell-Logo-640x400.png" alt="">
+      </div>
+      <div>
+        <img class="google" src="/image/Amazon-Logo-768x432.png" alt="">
+      </div>
+      <div>
+        <img class="google" src="/image/NetApp_logo.svg.png" alt="">
+
+      </div>
+      <div>
+        <img class="google" src="/image/Airtel-logo-768x432.png" alt="">
+      </div>
+      <div>
+        <img class="image" src="/image/samsung_logo_PNG9.png" alt="">
+      </div>
+
+      <div>
+        <img class="google" src="/image/microsoft-80658_1280.webp" alt="">
+      </div>
+      <div>
+        <img class="google" src="/image/Salesforce-Logo-768x505.png" alt="">
+      </div>
+      <div>
+        <img class="ibm" src="/image/purepng.com-ibm-logologobrand-logoiconslogos-251519939176ka7y8.png" alt="">
+      </div>
+      <div>
+        <img class="kpmg" src="/image/KPMG_logo.svg.png" alt="">
+      </div>
+      <div>
+        <img class="ey" src="/image/ey-logo-1-400x400.png" alt="">
+      </div>
+      <div >
+        <img class="isro" src="/image/Indian_Space_Research_Organisation_Logo.svg.png" alt="">
+      </div>
+
+    </div>
+    <div class="update-info">
+      <div class="updates">Know more about our team</div>
+      <!-- <hr class="line"> -->
+
+
+      <!-- <div class="details">
+        <span>
+          Mr. Ayan Sanki
+        </span>
+        <span>
+          <img class="profile-picture" src="/image/Ayan.jpg" alt="">
+        </span>
+        <span class="people-jobdetails">
+          Backend Developer at Apna Job
+        </span>
+      </div> -->
+      <div class="container text-center pt-4 pb-4" style="border-bottom: 2px solid black;">
+        
+        <div class="row align-items-center">
+          <div class="col-3"><b>Mr. Ayan Sanki</b></div>
+          <div class="col-2"><img class="profile-picture" src="/image/Ayan.jpg" alt=""></div>
+          <div class="col-6">Backend Developer at Apna Job</div>
+        </div>
+      </div>
+
+      <div class="container text-center pt-4 pb-4" style="border-bottom: 2px solid black;">
+        <div class="row align-items-center">
+          <div class="col-3"><b>Ms. Sampurna Sarkar</b></div>
+          <div class="col-2"><img class="profile-picture" src="/image/Sampurna.jpg" alt=""></div>
+          <div class="col-6">Frontend Developer at Apna Job</div>
+        </div>
+      </div>
+
+      <div class="container text-center pt-4 pb-4" style="border-bottom: 2px solid black;">
+        <div class="row align-items-center">
+          <div class="col-3"><b>Mr. Sukhendu Manna</b></div>
+          <div class="col-2"><img class="profile-picture" src="/image/Sukhendu.jpg" alt=""></div>
+          <div class="col-6">Frontend Developer at Apna Job</div>
+        </div>
+    </div>
+
+    <div class="container text-center pt-4 pb-4" style="border-bottom: 2px solid black;">
+        <div class="row align-items-center">
+          <div class="col-3"><b>Mr. Rajdeep Pal</b></div>
+          <div class="col-2"><img class="profile-picture" src="/image/Rajdeep.jpg" alt=""></div>
+          <div class="col-6">Machine Learning & Backend Developer at Apna Job</div>
+        </div>
+    </div>
+
+      <!-- <div class="details">
+        <span>
+          Ms. Sampurna Sarkar
+        </span>
+        <span>
+          <img class="profile-picture" src="/image/Sampurna.jpg" alt="">
+        </span>
+        <span class="people-jobdetails">
+          Frontend Developer at Apna Job
+        </span>
+      </div>
+
+      <div class="details">
+        <span>
+          Mr. Sukhendu Manna
+        </span>
+        <span>
+          <img class="profile-picture" src="/image/Sukhendu.jpg" alt="">
+        </span>
+        <span class="people-jobdetails">
+          Frontend Developer at Apna Job
+        </span>
+      </div>
+      <div class="details">
+        <span>
+          Mr. Rajdeep Pal
+        </span>
+        <span>
+          <img class="profile-picture" src="/image/Rajdeep.jpg" alt="">
+        </span>
+        <span class="people-jobdetails">
+          Machine Learning & Backend Developer at Apna Job
+        </span>
+      </div> -->
+      <!-- <div class="details">
+        <span>
+          Haripodo
+        </span>
+        <span>
+          <img class="profile-picture" src="/image/istockphoto-1299077582-612x612.jpg" alt="">
+        </span>
+        <span class="people-jobdetails">
+          duhfjhdk ksdjf kjls;ijfd;d;slk ej k
+        </span>
+      </div> -->
+    </div>
+  </div>
+
+
+  <!-- scrolling part -->
+
+  <div style="padding-left:0;">
+    <div class="fixed-box1">
+      <div class="abouting">
+        All About Apna Job
+      </div>
+    </div>
+
+    <div class="spacer">
+      <div class="about-apna-job">
+        Keep scrolling...
+        Keep scrolling... Apna Job is an innovative, full-stack web platform meticulously designed to modernize and simplify the entire lifecycle of job posting, job searching, application tracking, and recruitment management, serving as an intelligent bridge between employers seeking talented candidates and recruiters looking to source and evaluate the right applicants effectively. Built primarily using Node.js and Express.js on the backend, MongoDB as the database for robust and scalable data storage, and EJS templating with Bootstrap, HTML, and CSS for responsive front-end presentation, Apna Job provides an integrated, user-friendly environment where both job seekers and job posters can engage with minimal friction and maximal clarity. The platform is structured to accommodate two main user roles—the Recruiter, who represents the hiring entity or the organization and has the authority to create, edit, and remove job postings as needed, and the Employer, who is effectively the job seeker with the capability to browse, search, and apply to relevant positions by submitting their personal information and uploading their resumes, which are securely stored in MongoDB using GridFS or binary buffer fields to ensure data privacy and efficient retrieval. At its core, Apna Job features a sophisticated Authentication and Authorization system that not only enables secure signup and login processes but also incorporates advanced validation mechanisms to enforce password strength policies (requiring at least eight characters, including uppercase, lowercase, numeric, and special characters) and uses an email verification workflow powered by Nodemailer to generate and send one-time passwords (OTPs) to users’ email addresses, ensuring that all accounts are genuine and confirmed before access is granted to sensitive job application features. 
+
+
+        
+      </div>
+      <div class="scroll-image-div">
+        <img class="scroll-image" src="/image/c837a6_a5ef064fb8b24c42a97fddbf1e5ae13a~mv2 (1).png" alt="">
+      </div>
+    </div>
+    <div class="fixed-box2">
+      <img class="adjust-img" src="/image/img6.avif" alt="">
+    </div>
+  </div>
+
+
+  <!-- footer  -->
+
+  <footer class="footer">
+    <div class="footerhead">
+      <div><b>Follow us</b> </div>
+      <div class="icons">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
+          viewBox="0 0 16 16">
+          <path
+            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+          viewBox="0 0 16 16">
+          <path
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x"
+          viewBox="0 0 16 16">
+          <path
+            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+        </svg>
+
+      </div>
+
+    </div>
+    <hr style="height: 2px; background-color: #000000; border: none; width: 90vw;">
+    <div class="footer-column social">
+
+
+      <div class="footer-top">
+
+        <div class="footer-column">
+          <h4>Job search</h4>
+          <p><strong>Career programs</strong></p>
+          <a href="#">Research</a>
+          <a href="#">Students and grads</a>
+          <a href="#">Rotational Product Management</a>
+        </div>
+        <div class="footer-column">
+          <h4>Teams</h4>
+          <a href="#">Business teams</a>
+          <a href="#">Technology teams</a>
+          <h4>Working at Meta</h4>
+          <a href="#">Accessibility and Engagement</a>
+          <a href="#">Benefits</a>
+          <a href="#">Culture</a>
+          <a href="#">Hiring process</a>
+        </div>
+        <div class="footer-column">
+          <h4>My account</h4>
+          <a href="#">Career profile</a>
+          <a href="#">Account settings</a>
+          <a href="#">Messages</a>
+          <h4>Meta Careers blog</h4>
+        </div>
+        <div class="footer-column">
+          <h4>About us</h4>
+          <a href="#">About Meta</a>
+          <a href="#">Media gallery</a>
+          <a href="#">Brand resources</a>
+          <a href="#">For investors</a>
+          <a href="#">Looking for contractor roles?</a>
+        </div>
+
+      </div>
+    </div>
+    <hr style="height: 2px; background-color: #000000; border: none; width: 90vw;">
+
+    <div class="footer-bottom">
+      <h5>Equal Employment Opportunity</h5>
+      <p>
+        Meta is proud to be an Equal Employment Opportunity employer. We do not discriminate based upon race, religion,
+        color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical
+        conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status
+        as an individual with a disability, genetic information, political views or activity, or other applicable
+        legally protected characteristics.
+        You may view our Equal Employment Opportunity notice <a href="#">here</a>.
+      </p>
+      <p>
+        Meta is committed to providing reasonable support (called accommodations) in our recruiting processes for
+        candidates with disabilities, long term conditions, mental health conditions or sincerely held religious
+        beliefs, or who are neurodivergent or require pregnancy-related support. If you need assistance or an
+        accommodation due to a disability, fill out the <a href="#">Accommodations request form</a>.
+      </p>
+    </div>
+
+    <div class="footer-meta">
+      <p>© 2025 Meta</p>
+      <a href="#">Community Standards</a>
+      <a href="#">Data Policy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>

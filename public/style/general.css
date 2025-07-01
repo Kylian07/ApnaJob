@@ -1,0 +1,244 @@
+
+/* body */
+
+body{
+  background-color: rgb(241, 241, 219);
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0px;
+
+}
+
+p{
+    font-family:'Space Grotesk', sans-serif ;
+}
+button{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* page-1 */
+
+.page-1 {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 150px 8px 150px;
+  
+}
+
+.about{
+  height: 510px;
+  width: 516px;
+  font-size: 35px;
+  color: rgb(49, 47, 47);
+  margin-right: 50px;
+}
+.us{
+  width: 494px;
+  font-size: 75px;
+  margin-bottom: 80px;
+}
+.sub{
+  font-size: 24px;
+  color: rgb(80, 78, 78);
+  margin-bottom: 20px;
+}
+.my_button{
+  background-color: rgb(33, 83, 116);
+  color: rgb(248, 244, 244);
+  font-size: 16px;
+  
+  border-radius: 100px; 
+  padding: 13px 35px;
+  cursor: pointer;
+  opacity: 70%;
+  border: none;
+}
+.my_button:hover{
+  opacity: 100%;
+  box-shadow: 0px 5px 5px 0px black;
+}
+.pic {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.pic img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* page-2 */
+
+.page2{
+    margin: 50px 150px 8px 150px;
+}
+button{
+    background-color: black;
+    color: white;
+    padding:8px 14px;
+    font-size: 18px;
+    border-top-right-radius: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+
+}
+.company-names{
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(105, 91, 91);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+   
+   
+}
+.company-logo{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.company-logo div img{
+    height: 80px;
+    
+
+}
+.company-logo div{
+    margin: 2rem;
+}
+
+.update-info{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.updates{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+     font-family:'Space Grotesk', sans-serif ;
+     border-bottom: 2px solid black;
+     padding-bottom: 1.5rem;
+}
+.line{
+    border: 1.5px solid black;
+}
+.details{
+    padding-top: 1rem;
+     border-bottom: 2px solid black;
+     padding-bottom: 1.5rem;
+}
+.profile-picture{
+    height: 5rem;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+.people-jobdetails{
+    margin-left: 100px;
+    padding-left: 1%;
+}
+.name{
+    padding-left: 310px;
+}
+
+
+/* slide-part */
+
+.slide-detail{
+    background-color: rgb(128, 168, 202);
+    /* height:20px;
+    width: 10px; */
+}
+
+/* scrolling-part */
+
+
+
+.spacer {
+      height: 1140px;
+      padding: 20px;
+      padding-left: 38%;
+      display: flex;
+
+    }
+
+    .fixed-box1 {
+      position: sticky;
+      top: 10rem;
+      width: 37%;
+      left: 0;
+      height: 15rem;
+      background-color: transparent;
+      color:black;
+    }
+    .fixed-box2 {
+      position: sticky;
+      bottom: -3rem;
+      right: 0;
+      left: 95%;
+      width: 29%;
+      height: 30rem;
+      padding-left: 123px;
+      align-items: end;
+      background-color:transparent;
+      color: black; 
+      font-size: 18px;
+    }
+   
+    .abouting{
+        width: 60%;
+        height: 100%;
+        text-align: center;
+        font-size: 50px;
+        margin-right: 0;
+        margin-left: 8rem;
+        font-weight: bold;
+    }
+    .adjust-img{
+      height: 20rem;
+     margin-top:140px;
+     /* margin-left: 30px; */
+    }
+    .about-apna-job{
+      padding-right: 250px;
+      margin-top: 70%;
+    }
+    .scroll-image{
+      height: 300px; 
+    }
+
+    .scroll-image-div{
+      margin-top: 1300px;
+      z-index: 100;
+    }
+
+    /* card-part */
+
+    .card{
+    /* margin-right:50px; */
+    padding: 0;
+    flex: 1 1 400px;
+    max-width: 450px;
+    /* text-align: left; */
+ 
+    
+}
+.card-body{
+    padding:0;
+}
+
+.card-img-top{
+    background-color: transparent;
+    border-radius: 20px;
+    /* height: 50%; */
+    padding-bottom: 20px;
+}
+
+
+    

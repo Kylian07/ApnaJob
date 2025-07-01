@@ -1,0 +1,100 @@
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid rgb(224, 224, 224);
+  height: 80px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  transform: rotate(-45deg);
+}
+
+.nav-item {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.plus {
+  font-size: 24px;
+  line-height: 0;
+}
+
+.nav-right {
+  margin-right: 10px;
+}
+
+.profile-circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.main{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.filter{
+  width: 80rem;
+  height: 80px;
+  background-color: rgb(247, 245, 227);
+  align-items: center;
+  justify-content: space-evenly;
+  
+  
+}
+
+.dropdown{
+  z-index: 1;
+  
+}
+
+.posting {
+  position: relative;
+  min-height: 400px;   /* or whatever base height you prefer */
+  width: 100%;
+  padding-top: 20px;
+   /* optional for visibility */
+}
+
+.add-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  
+
+}
+
+
+
+
+

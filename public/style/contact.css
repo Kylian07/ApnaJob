@@ -1,0 +1,46 @@
+/* .main-container{
+    background-color: yellow;
+} */
+.container-1{
+    background-color: rgb(245, 223, 95);
+    display: flex;
+    height: 30rem;
+    justify-content: space-between;
+
+}
+.search-place{
+    padding-top: 2rem;
+}
+.search-input{
+    padding: 0.5rem 25rem 0.5rem 3rem;
+    border-radius: 2rem;
+}
+
+.search-button{
+    margin-left: -6rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.detail1{
+    margin-top: 10rem;
+    margin-left: 15rem;
+}
+
+.card-container{
+    padding: 70px 80px  ;
+}
+
+.card-body{
+    text-align: center;
+}
+.quick-link{
+    padding-left:  80px;
+    padding-right: 80px;
+}
+.help{
+    font-size: 55px;
+    font-weight: bold;
+}
