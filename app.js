@@ -29,7 +29,7 @@ app.use(express.static("public"));
 app.use(methodOverride("_method"));
 
 app.use(session({
-  secret: process.env.SESSION_SECRET,
+  secret: process.env.SESSION_KEY,
   resave: false,
   saveUninitialized: false
 }));
