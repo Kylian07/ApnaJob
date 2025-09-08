@@ -10,6 +10,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 # Download NLTK stopwords and load spaCy model
 nltk.download('stopwords')
+nltk.download('vader_lexicon')
 stop_words = set(stopwords.words('english'))
 nlp = spacy.load("en_core_web_sm")
 
